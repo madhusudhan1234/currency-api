@@ -4,6 +4,10 @@ node_js:
 cache:
   directories:
     - node_modules
+addons:
+  code_climate:
+    repo_token:
+      secure: "uVFtUZAfauCEyOh2u6GXJOzeVtGk8QLaVxH7W92XdZfUwfsblUczdy0UJI3MBEUYLS7o5kU4gDL26617akcRKKRtthGqsnI8EQAJT8JWWsnBgpOjb+ynCEMhxN0lYIs928NU28nSbSnkgg80P+k+6pLZHxrZtCe/CJix03iB0oFBeeKFHLr6lF1skEB7S2aiJQnwkRnF8qwmE1Ly/vxYrj2HiSATOyg8gtkHFMeNQaNGiwdhQ7Jo21SNpI8iwsuplhW1SgxHtFgTYm79NZq2flSbBwSSc3UneLy5IAaLk0SzrZ6TXCjAQBOvV4WxiyMaj3RIPgUg+G1kQx5JqEMXg0rfn8H7sL3VDzSVD/EB+st5XOBMxtH4xkY3HMvhTIZRcYMj8j5PhZO3Hbgj9sRZixPogL8xFYy6OyhYVvzj4wZ4GUbvwvdCj7vrkCDB5el0r5ovYdyFDYQK6MUZ1EgyIOgCoQEziPOGeT8wl3iVD9sKp6OQ8Ih2etTqPgfERJTzQTUpdCxK8wGvhdbTLzFbnQXF4T0mqv61Lir44TdQPNVHaCvCusdJIY8c/AvVCvv9itbyxjyBY8d9BXfCHbXIvKcWpqDbWn1thiAMwFyFcT+M9mOErmlEHf/uEo+DhDJbjSKe3hTwF1h2DvRu2Hjl2b/emAOCZ+rA0dB9j2onjdk="
 before_script:
   - npm install
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -16,3 +20,4 @@ after_script:
 
 notifications:
   email: false
+  
